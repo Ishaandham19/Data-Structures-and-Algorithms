@@ -1,8 +1,0 @@
-For the good fibonacci algorithm BigO is O(n^2)
-Not O(n) because for very large numbers 
-	series[i - 1] + series[i - 2]
-is considered to be O(n) and not O(1)
-Therefore, O(n) * O(n) is O(n^2)
-
-For bad fibonacci the run time is exponential. As, for some n there are 2^n-1 steps of computation (Imagine a tree).
-[2^0 + 2^1 + 2^2 + 2^3 + 2^4  + 2^5 ...+ 2^n = 2^n-1]

@@ -1,3 +1,9 @@
+/**
+  You are given an integer array (denoms) representing coins of different denominations and an integer amount (amt) representing a total amount of money.
+  Find the fewest number of coins that you need to make up that amount. 
+  If that amount of money cannot be made up by any combination of the coins, return error msg  or -1;  
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <vector> 
