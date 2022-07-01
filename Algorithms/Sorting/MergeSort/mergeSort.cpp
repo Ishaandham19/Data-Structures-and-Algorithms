@@ -1,7 +1,7 @@
 /*
- * void merge (int arr[], int l, int m, int r)
- * Inputs: arr[] (to be sorted), int l (index to start of left array), int r (index to start of right array)
- * Output: merges the two sub-arrays and arranges it in the given array in a sorted manner
+ * Merge Sort - Sorts a list using a divide and conquer approach.
+ * Time complexity - O(N * lgN)
+ * Space complexity - O(N)
  */  
 
 

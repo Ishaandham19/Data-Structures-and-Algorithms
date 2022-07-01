@@ -1,3 +1,8 @@
+/**
+ *  Quick Sort Algorithm - Sorts a list in place in O(N * lgN) avg time. 
+ *  Worst case runtime in O(N^2)
+ */
+
 #include <iostream>
 
 void swap(int array[],int i, int j){

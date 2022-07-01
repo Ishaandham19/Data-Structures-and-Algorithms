@@ -18,7 +18,7 @@ int binary_search_helper(vector<T> a, T target, int left, int right) {
     if (right < left)    //base case
         return -1;
 
-    if (target == a[mid]) {   //target eleme is found
+    if (target == a[mid]) {   //target elem is found
         return mid;
     }
     else if (target < a[mid]) {
