@@ -12,6 +12,7 @@ void swap(int array[],int i, int j){
 }
 
 
+// Lomuto Parition - choose pivot as last elem (O(N^2) if array is sorted)
 int partition(int array[], int p, int r){
     int x = array[r];  //create a pivot
 
