@@ -1,23 +1,23 @@
+from collections import deque
+
 def preoder_dfs_rec(v, adj):
     """
-    Traverses the adjacency list ADJ with V vertices in preorder depth first order
+    Traverses the adjacency list ADJ with V vertices in reorder depth first order
     recursively. Returns a list contains all the visited nodes. 
     Time Complexity - O(|V| + |E|)
     Space Complexity - O(|V|)
     """
-    visited_nodes = []
+    processed_nodes = []
     visited = [False] * v
     def helper(x):
-        if visited[x]:
-            return
-        visited_nodes.append(x)  # visit node
+        processed_nodes.append(x)  # visit node
         visited[x] = True
-        for edge in adj[x]:
-            v = edge[0]
-            helper(v)
-
+        for neigh_v in adj[x]:
+            if not visited[neigh_v]:
+                helper(neigh_v)
+ 
     helper(0)
-    return visited_nodes
+    return processed_nodes
 
 
 def preorder_dfs_itr(v, adj):
@@ -27,3 +27,17 @@ def preorder_dfs_itr(v, adj):
     Time Complexity - O(|V| + |E|)
     Space Complexity - O(|V|)
     """
+    processed_nodes = []
+    visited = [False] * v
+    stack = deque()
+    stack.append(0)
+
+    while len(stack):
+        vertex = stack.pop()
+        if visited[vertex] == False:
+            visited[vertex] = True
+            processed_nodes.append(vertex)
+            for neigh_v in adj[vertex][::-1]:
+                    stack.append(neigh_v)
+    
+    return processed_nodes
