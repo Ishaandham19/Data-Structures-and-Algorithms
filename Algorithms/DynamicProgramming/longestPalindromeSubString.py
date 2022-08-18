@@ -2,7 +2,7 @@
 Given a string s, return the longest palindromic substring in s.
 
 Explanation - Use dynamic programming to reduce the time complexity from N^3 to N^2. 
-Instead of checking if each substring is a palindrome use the base cases - a letter, and two same letters. 
+Instead of checking if each substring is a palindrome use the base cases - a letter, and two same letters (the two possible centers of a palindrome). 
 """
 # Time Complexity : O(N^2)
 # Space Complexity : O(1)
