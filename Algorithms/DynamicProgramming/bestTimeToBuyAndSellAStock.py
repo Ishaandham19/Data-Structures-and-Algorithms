@@ -6,7 +6,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 Source : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-Solution
+Solution (Used Kadane's Algorithm)
 In this problem we attempt to find a pair of values such that their difference is largest and the second value in the pair comes after the first in the array. 
 A brute force way would be to check the largest pair of each value in the array and return the largest difference - O(N^2).
 We can also use dynamic programming to attempt to solve this in O(N). 

@@ -11,10 +11,13 @@ def dijkstra_shortest_path(v, adj, x):
      Argument ADJ represents a adjacency list - [[(v1,w1), (v2,w2)], [(),()...]...]
      and V the number of vertices.
 
-     # change to algo to match the complexities - start heap with V vertices. 
-     # change heappush to decreasePrority operation. 
-     Time Complexity - Theta((|E| + |V|) * log |V|)
+     Time Complexity - Theta(|V| + |E| * log |E|)
      Space Complexity: Theta(|V|) - size of heap is |V|
+
+    Alternate implementation - 
+        Add all the vertices in the heap - start heap with V vertices. 
+        Change heappush to decreasePriority operation. 
+        Time Complexity - Theta((|V| + |E|) * log |V|)
     """
     distances = [float('inf')] * v
     distances[x] = 0
