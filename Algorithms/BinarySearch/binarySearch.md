@@ -43,7 +43,7 @@ def search(self, array: List[int], target: int) -> int:
     left, right = 0, len(array) - 1
     while left < right:
         mid = left + (right - left) // 2
-        if value >= target:
+        if array[mid] >= target:
             right = mid
         else:
             left = mid + 1
